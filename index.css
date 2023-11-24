@@ -39,8 +39,8 @@ header {
     grid-template-columns: 3fr 1fr;
     gap: 50px;
     padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding-left: 200px;
+    padding-right: 210px;
     min-height: 100vh;
 }
 
@@ -104,7 +104,7 @@ footer {
 
 /* COURSE PAGE */
 .course-page {
-    padding: 40px;
+    padding: 40px 200px 0px 210px;
     min-height: 100vh;
 }
 
@@ -113,43 +113,41 @@ table {
 }
 
 table td {
-    border: 1px solid;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
 }
 
 table th {
-    width: 150px;
-    padding: 0px 20px 0px 20px;
+    width: 100px;
+    padding: 5px 20px 5px 20px;
+    background-color:#7c7c7c;
+    color: white;
 }
 
 .table-description {
-    width: 50%;
+    width: 600px;
 }
 
-.table--top {
-    border-top: 1px solid;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-bottom: 0px;
+.table-schedule {
+    width:300px;
 }
 
-.table--mid {
-    border-top: 0px;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-bottom: 0px;
-}
-
-.table--bot {
-    border-top: 0px;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
+.table-course{
+    width: 150px;
 }
 
 
 /* RESOURCE PAGE */
-/* Add some styles for better visibility */
+.resources {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-right: 210px;
+    padding-bottom: 200px;
+    min-height: 100vh;
+}
+
 #searchResults {
     margin-top: 20px;
     font-weight: bold;
@@ -165,7 +163,7 @@ table th {
     position: absolute;
     border: 1px solid #ccc;
     width: calc(100% - 2px); /* Adjusted width to match the search input */
-    max-height: 150px;
+    max-height: 300px;
     overflow-y: auto;
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -176,4 +174,16 @@ table th {
     cursor: pointer;
     padding: 10px;
     border-bottom: 1px solid #eee; /* Removed border between suggestions */
+}
+
+.resource-box {
+    max-width: 1000px;
+    height: 200px;
+    background-color: #ffffff; 
+    color: #000000; 
+    line-height: 100px; 
+    border-radius: 10px;
+    border:2px solid;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
 }

@@ -1,5 +1,5 @@
 // Sample data for suggestions
-var sampleData = ['item1', 'item2', 'item3', 'otherItem', 'exampleItem'];
+var sampleData = ['COMP-1000', 'COMP-1100', 'MATH-1250', 'MATH-1260', 'MATH-1720', 'MATH-1760', 'COMP-1077', 'MATH-2310', 'COMP-2120'];
 var suggestionTimeout;
 
 function updateSuggestions() {
