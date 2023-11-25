@@ -10,8 +10,7 @@ UWindsor CS Hub is a web application designed to serve as a centralized hub for 
 - [File Structure](#file-structure)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [TODO](#TODO)
 
 ## About
 
@@ -57,4 +56,6 @@ UWindsor CS Hub is a platform where students and faculty can access and share re
 2. **Upload a Resource:** Use the file upload form to add a new resource, providing a title, description, and the PDF file.
 3. **Delete a Resource:** Each resource has a delete button; click it to remove the corresponding resource.
 
-TODO: Put all the sensitive database shenanigans in a gitingnored .env file so that all my juicy database information isn't just out on the internet.
+#TODO:
+
+- Put all the sensitive database shenanigans in a gitingnored .env file so that all my juicy database information isn't just out on the internet.
