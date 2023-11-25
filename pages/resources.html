@@ -9,9 +9,9 @@
       content="Uwindsor CS Hub"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../src/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <script src="../src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>UWindsor CS Hub</title>
   </head>
@@ -20,32 +20,50 @@
 
     <header>
         <div class="navbar" id="navbar">
-            <a href="index.html" class="home-button">
-                <img src="./images/css-logo-shield.png" height="20" width="25" />
+            <a href="../index.html" class="home-button">
+                <img src="../images/css-logo-shield.png" height="20" width="25" />
                 <strong>UWINDSOR CS HUB</strong>
             </a>
             <div class="nav-options">
                 <a href="courses.html">Courses</a>
                 <a href="tutorials.html">Tutorials</a>
-                <a href="resources.html">Resources</a>
-                <a href="#top">Contact</a>
+                <a href="#top">Resources</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </header>
 
-    <div class="home">
-        <p>HELLO</p>
+    <div class="resources">
+      <div>
+        <h1><strong>Resources</strong></h1>
 
-        
+        <div id="fileList"></div>
+
+
+      </div>
+      <div>
+        <form action="../src/upload.php" method="post" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" name="title" required>
+    
+            <label for="description">Description:</label>
+            <textarea name="description" rows="4" required></textarea>
+    
+            <label for="file">File:</label>
+            <input type="file" name="file" accept=".pdf" required>
+    
+            <button type="submit" class="button1">Upload</button>
+        </form>
+      </div>
     </div>
 
     <footer>
         <div class="footer-box">
-            <img src="./images/twitter.svg" />
-            <img src="./images/instagram.svg" />
-            <img src="./images/facebook.svg" />
-            <img src="./images/youtube.svg" />
-            <img src="./images/linkedin.svg" />
+            <img src="../images/twitter.svg" />
+            <img src="../images/instagram.svg" />
+            <img src="../images/facebook.svg" />
+            <img src="../images/youtube.svg" />
+            <img src="../images/linkedin.svg" />
         </div>
 
         <div class="footer-box">

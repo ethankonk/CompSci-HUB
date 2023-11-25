@@ -104,16 +104,17 @@ footer {
 
 /* COURSE PAGE */
 .course-page {
-    padding: 40px 200px 0px 210px;
+    padding: 80px 200px 0px 210px;
     min-height: 100vh;
 }
 
 table {
     border: 1px solid;
+    margin-top: 0px;
 }
 
 table td {
-    padding: 5px 20px 5px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 table th {
@@ -135,8 +136,12 @@ table th {
     width: 150px;
 }
 
+.table-instructor {
+    width: 150px;
+}
 
-/* RESOURCE PAGE */
+
+/* TUTORIAL PAGE */
 .resources {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -153,6 +158,14 @@ table th {
     font-weight: bold;
 }
 
+.search-box {
+    padding-top: 60px;
+}
+
+.search-bar {
+    border-radius: 5px;
+}
+
 #suggestions {
     margin-top: 10px;
     position: relative;
@@ -162,7 +175,7 @@ table th {
     display: none;
     position: absolute;
     border: 1px solid #ccc;
-    width: calc(100% - 2px); /* Adjusted width to match the search input */
+    width: calc(100% - 2px); 
     max-height: 300px;
     overflow-y: auto;
     background-color: #fff;
@@ -173,17 +186,136 @@ table th {
 .suggestion {
     cursor: pointer;
     padding: 10px;
-    border-bottom: 1px solid #eee; /* Removed border between suggestions */
+    border-bottom: 1px solid #eee; 
 }
 
 .resource-box {
-    max-width: 1000px;
-    height: 200px;
-    background-color: #ffffff; 
-    color: #000000; 
-    line-height: 100px; 
-    border-radius: 10px;
-    border:2px solid;
-    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.resource-box h5 {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #333333;
+}
+
+.resource-box p {
+    color: #666666;
+    padding: 10px;
+}
+
+.resource-box ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.resource-box li {
+    margin-bottom: 10px;
+}
+
+.resource-box a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-box a:hover {
+    text-decoration: underline;
+}
+
+/* RESOURCE PAGE */
+.resource-details {
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.resource-details span:hover {
+    background: #e7195a;
+    color: #fff;
+}
+
+form {
+    max-width: 600px;
+    height: fit-content;
+    max-height: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button1 {
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

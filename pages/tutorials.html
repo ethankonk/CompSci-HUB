@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Uwindsor CS Hub"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../src/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="../src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>UWindsor CS Hub</title>
+  </head>
+  <body>
+    <a name="top"></a>
+
+    <header>
+        <div class="navbar" id="navbar">
+            <a href="../index.html" class="home-button">
+                <img src="../images/css-logo-shield.png" height="20" width="25" />
+                <strong>UWINDSOR CS HUB</strong>
+            </a>
+            <div class="nav-options">
+                <a href="courses.html">Courses</a>
+                <a href="#top">Tutorials</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="resources">
+        <div>
+            <h1><strong>Tutorials</strong></h1>
+          
+            <!-- Programming Practice -->
+            <div id="Programming Practice" class="resource-box">
+              <h5>Programming Practice</h5>
+              <p>Enhance your coding skills and problem-solving abilities through regular programming practice. Platforms like LeetCode offer a variety of coding challenges to help you improve.</p>
+              <ul>
+                <li><a href="https://leetcode.com/" target="_blank">LeetCode</a></li>
+              </ul>
+            </div>
+          
+            <!-- Programming Languages -->
+            <div id="Programming Languages" class="resource-box">
+              <h5>Programming Languages</h5>
+              <p>Master programming languages such as C, C++, Java, Python, and HTML/CSS with comprehensive tutorials from W3Schools. Explore the fundamentals and advanced concepts of each language.</p>
+              <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+              </ul>
+            </div>
+          
+            <!-- Homework Help -->
+            <div id="Homework Help" class="resource-box">
+              <h5>Homework Help</h5>
+              <p>Get assistance with your homework and assignments through online platforms. Websites like Chegg and Quizlet provide solutions and study resources to support your learning.</p>
+              <ul>
+                <li><a href="https://www.chegg.com/" target="_blank">Chegg</a></li>
+                <li><a href="https://www.quizlet.com/" target="_blank">Quizlet</a></li>
+              </ul>
+            </div>
+          
+            <!-- Schedule Guide -->
+            <div id="Schedule Guide" class="resource-box">
+              <h5>Schedule Guide</h5>
+              <p>Effectively plan your course sequence with a helpful guide from a UWindsor CS student like you!</p>
+              <ul>
+                <li><a href="https://uwindsorcss.github.io/wiki/courses/course-planning/recommended-sequence" target="_blank">Jose's Recommended Course Sequence</a></li>
+              </ul>
+            </div>
+          </div>
+        
+        <div class="search-box">
+            <form id="searchForm">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search..." oninput="updateSuggestions()" autocomplete="off" onblur="hideSuggestions()">
+                <button type="button" class="button1" onclick="search()">Search</button>
+            </form>
+
+            <div id="searchResults"></div>
+            <div id="suggestions">
+                <div class="suggestion-dropdown" id="suggestionDropdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-box">
+            <img src="../images/twitter.svg" />
+            <img src="../images/instagram.svg" />
+            <img src="../images/facebook.svg" />
+            <img src="../images/youtube.svg" />
+            <img src="../images/linkedin.svg" />
+        </div>
+
+        <div class="footer-box">
+          <p>Thank you for visiting!</p>
+        </div>
+    </footer>
+  </body>
+</html>
