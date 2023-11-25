@@ -1,6 +1,6 @@
 # UWindsor CS Hub
 
-This is an HTML5 project developed for my COMP-2707 class. 
+This is an HTML5 project developed for my COMP-2707 class.
 UWindsor CS Hub is a web application designed to serve as a centralized hub for resources related to computer science at the University of Windsor.
 
 ## Table of Contents
