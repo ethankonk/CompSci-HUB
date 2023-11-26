@@ -1,9 +1,11 @@
 <?php
+$env = parse_ini_file('../.env');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Database connection
     $servername = "localhost";
-    $username = "konkoloe_upload_file_db";
-    $password = "12345";
+    $username = $env["USER_NAME"];
+    $password = $env["PASSWORD"];
     $dbname = "konkoloe_upload_file_db";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
