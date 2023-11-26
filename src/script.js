@@ -160,3 +160,28 @@ function validateForm() {
 
     return true;
 }
+
+// Contact From Error Handeling
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('submit.php', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        const messageContainer = document.getElementById('messageContainer');
+
+        if (data.success) {
+            // Show success message
+            messageContainer.innerHTML = `<p style="color: green;">${data.message}</p>`;
+        } else {
+            // Show error message
+            messageContainer.innerHTML = `<p style="color: red;">${data.message}</p>`;
+        }
+    })
+    .catch(error => console.error('Error submitting form:', error));
+});
