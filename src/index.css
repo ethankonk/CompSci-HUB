@@ -110,7 +110,7 @@ footer {
 
 table {
     border: 1px solid;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 table td {
@@ -163,7 +163,7 @@ table th {
 }
 
 .search-box {
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .search-bar {
@@ -313,6 +313,7 @@ button {
 .button1 {
     border-radius: 10px;
     width: 100px;
+    height: 45px;
 }
 
 button:hover {
@@ -366,3 +367,37 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
+.submit {
+    display: flex;
+    gap: 20px;
+}
+
+.message-success {
+    width: fit-content;
+    height: 45px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid;
+    border-color: green;
+    background-color: rgb(213, 241, 213);
+}
+
+.message-success p {
+    color: green;
+}
+
+.message-error {
+    width: fit-content;
+    height: 45px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: red;
+    background-color: rgb(240, 216, 216);
+}
+
+.message-error p {
+    color: red;
+}

@@ -161,27 +161,52 @@ function validateForm() {
     return true;
 }
 
-// Contact From Error Handeling
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    const formData = new FormData(this);
+        const formData = new FormData(this);
 
-    fetch('submit.php', {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-        const messageContainer = document.getElementById('messageContainer');
+        fetch('../src/submit.php', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            const messageContainer = document.getElementById('messageContainer');
+            const messageHandlerContainer = document.createElement('div');
 
-        if (data.success) {
-            // Show success message
-            messageContainer.innerHTML = `<p style="color: green;">${data.message}</p>`;
-        } else {
-            // Show error message
-            messageContainer.innerHTML = `<p style="color: red;">${data.message}</p>`;
-        }
-    })
-    .catch(error => console.error('Error submitting form:', error));
+            if (data.success) {
+                // Show success message
+                messageHandlerContainer.className = 'message-success';
+                messageHandlerContainer.innerHTML = `<p>Message sent successfully.</p>`;
+                contactForm.reset();
+            } else {
+                // Show error message
+                messageHandlerContainer.className = 'message-error';
+                messageHandlerContainer.innerHTML = `<p class="err">Error sending message.</p>`;
+            }
+
+            // Clear existing content
+            messageContainer.innerHTML = '';
+
+            // Append the message container to the main container
+            messageContainer.appendChild(messageHandlerContainer);
+        })
+        .catch(error => {
+            // Handle any errors during the fetch request
+            console.error('Error submitting form:', error);
+            const messageHandlerContainer = document.createElement('div');
+            const messageContainer = document.getElementById('messageContainer');
+            messageHandlerContainer.className = 'message-error';
+            messageHandlerContainer.innerHTML = `<p>An error occurred</p>`;
+
+            // Clear existing content
+            messageContainer.innerHTML = '';
+
+            // Append the error message container to the main container
+            messageContainer.appendChild(messageHandlerContainer);
+        });
+    });
 });
+
