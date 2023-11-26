@@ -78,11 +78,15 @@ footer {
 }
 
 .carousel-img {
-    max-height: 500px;
-    width: fit-content; 
+    width: 100%; 
     object-fit: cover; 
     border: 5px solid #555;
 }
+
+#carouselExampleIndicators {
+    max-width: 100%;
+    margin: auto;
+  }
 
 .hero-banner {
     padding-top: 200px;
