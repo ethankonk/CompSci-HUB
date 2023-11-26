@@ -142,7 +142,7 @@ table th {
 
 
 /* TUTORIAL PAGE */
-.resources {
+.tutorial-page {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 50px;
@@ -230,6 +230,17 @@ table th {
 }
 
 /* RESOURCE PAGE */
+.resource-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-right: 210px;
+    padding-bottom: 200px;
+    min-height: 100vh;
+}
+
 .resource-details {
     background: #fff;
     border-radius: 10px;

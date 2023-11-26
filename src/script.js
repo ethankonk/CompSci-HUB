@@ -139,3 +139,24 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error uploading file:', error));
     });
 });
+
+// Validate Contact Form
+function validateForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    if (name === '' || email === '' || message === '') {
+        alert('All fields (Name, Email, and Message) are required.');
+        return false;
+    }
+
+    // Check if the email is in a valid format
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+    }
+
+    return true;
+}
