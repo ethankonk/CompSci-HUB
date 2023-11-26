@@ -40,7 +40,7 @@ header {
     gap: 50px;
     padding-top: 80px;
     padding-left: 200px;
-    padding-right: 210px;
+    padding-right: 150px;
     min-height: 100vh;
 }
 
@@ -78,8 +78,8 @@ footer {
 }
 
 .carousel-img {
-    max-height: 400px;
-    width: 100%; 
+    max-height: 500px;
+    width: fit-content; 
     object-fit: cover; 
     border: 5px solid #555;
 }
