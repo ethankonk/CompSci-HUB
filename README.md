@@ -33,9 +33,11 @@ UWindsor CS Hub is a platform where students and faculty can access and share re
 - **src**
   - display.php
   - script.js
+  - index.css
   - upload.php
   - delete.php
   - display.php
+  - submit.php
   
 - **images**
   - (various image files)
@@ -58,4 +60,4 @@ UWindsor CS Hub is a platform where students and faculty can access and share re
 
 ## TODO
 
-- Put all the sensitive database shenanigans in a gitingnored .env file so that all my juicy database information isn't just out on the internet.
+- Rearrange files into correctly named folders.
