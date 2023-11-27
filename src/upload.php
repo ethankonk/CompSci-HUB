@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO files (title, description, file_name) VALUES ('$title', '$description', '$file_name')";
         if ($conn->query($sql) === TRUE) {
             // Move the uploaded file to a specific folder
-            $upload_folder = 'uploads/';
+            $upload_folder = '../uploads/';
             move_uploaded_file($file_temp, $upload_folder . $file_name);
 
             // Redirect back to the original page

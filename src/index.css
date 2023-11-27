@@ -12,16 +12,15 @@ header {
 }
 
 #navbar {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    width: 100%; /* Full width */
+    background-color: #333; 
+    position: fixed; 
+    width: 100%; 
     margin: 0;
     padding: 0;
     display: flex;
     z-index: 1000;
 }
 
-/* Style the navbar links */
 #navbar a {
     color: rgb(255, 255, 255);
     text-align: center;

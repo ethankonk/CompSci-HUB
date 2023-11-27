@@ -4,7 +4,6 @@ $env = parse_ini_file('../.env');
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Replace these variables with your actual email and subject
     $toEmail = $env["EMAIL"];
     $subject = "Contact Form Submission";
 
@@ -32,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(['success' => false, 'message' => 'Error sending message. Please try again.']);
     }
 
-    exit(); // Ensure script stops execution after sending JSON response
+    exit();
 } else {
     // Invalid request method
     echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
-    exit(); // Ensure script stops execution after sending JSON response
+    exit();
 }
 ?>
