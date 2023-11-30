@@ -57,7 +57,3 @@ UWindsor CS Hub is a platform where students and faculty can access and share re
 1. **View Resources:** Navigate to the "Resources" section on the homepage to see a list of uploaded resources.
 2. **Upload a Resource:** Use the file upload form to add a new resource, providing a title, description, and the PDF file.
 3. **Delete a Resource:** Each resource has a delete button; click it to remove the corresponding resource.
-
-## TODO
-
-- Rearrange files into correctly named folders.
