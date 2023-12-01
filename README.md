@@ -52,6 +52,10 @@ UWindsor CS Hub is a platform where students and faculty can access and share re
 1. Clone the repository: `git clone <repository-url>`
 2. Open the `index.html` file in a web browser.
 
+or
+
+Follow this link: https://konkoloe.myweb.cs.uwindsor.ca/
+
 ## Usage
 
 1. **View Resources:** Navigate to the "Resources" section on the homepage to see a list of uploaded resources.
